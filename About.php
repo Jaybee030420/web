@@ -5,7 +5,6 @@ session_start();
 
 @include 'config.php';
 
-
 if (isset($_SESSION['username']) && isset($_SESSION['position'])) {
     $username = $_SESSION['username'];
     $name = '';
