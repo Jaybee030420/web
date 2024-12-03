@@ -14,6 +14,7 @@ if (isset($_SESSION['username']) && isset($_SESSION['position'])) {
 }
 
 
+
 if (isset($_POST['book'])) {
     // Get form values
     $arrival = $_POST['arrival']; 
