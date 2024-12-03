@@ -1,0 +1,196 @@
+*{
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 10px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    background: url('./assets/images/carousel/4.png');
+}
+#sidebar .title h1{
+    color: black;
+    font-size: 28px;
+    text-align: center;
+    margin: 20px 20px 20px;
+
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000000;
+}
+.sidebar-list ul {
+    padding: 40px 0 0;
+}
+
+.sidebar-list ul li {
+    list-style-type: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+    margin: 0 auto 20px auto;
+    
+}
+
+.sidebar-list ul li:last-child {
+    border: none;
+}
+
+.sidebar-list ul li a {
+    color: #111;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sidebar-list ul li a:hover {
+    color: #000; /* Change text color back to white */
+    font-weight: 700;
+    border-left: 5px solid #ff6600; /* Add a border left on hover */
+}
+
+.sidebar-list ul li .logout{
+    font-weight: 500;
+    color: rgb(149, 99, 6);
+}
+.sidebar-list ul li .logout:hover {
+    color: rgb(149, 99, 6);
+    font-weight: 700;
+    border-left: 5px solid #ff6600; /* Add a border left on hover */
+}
+
+
+.sidebar-list ul li .cat{
+    color: #000; /* Change text color back to white */
+    font-weight: 700;
+    border-left: 5px solid #ff6600; /* Add a border left on hover */
+}
+.icon-field {
+    margin: 20px auto;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ff7b00;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.btn:hover {
+    background-color: #b36b00;
+    cursor: pointer;
+}
+
+.delete {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #555;
+    color: #000;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.delete:hover {
+    background-color: #b36b00;
+    cursor: pointer;
+}
+
+
+
+.container-fluid {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/images/carousel/4.png') center/cover;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.inbox {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    border: 3px solid #7d3200;
+    margin-left: 450px;
+    
+
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #ff6600;
+}
+
+.email-list {
+    border-top: 3px solid #7d3200;
+    padding-top: 20px;
+}
+
+.email-item {
+    padding: 10px;
+    border-bottom: 1px solid #7d3200;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.email-item:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.email-item .sender {
+    font-weight: bold;
+}
+
+.email-item .subject {
+    color: #7d3200;
+}
+
+.email-item .date {
+    color: #b36b00;
+    font-size: 0.8em;
+}
+
+
+
+.message-details {
+    display: none; /* Initially hide message details */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #7d3200;
+}
+.message-details.show {
+    display: block;
+}
+
+.white-text {
+    color: white;
+}
+

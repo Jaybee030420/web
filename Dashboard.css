@@ -1,0 +1,231 @@
+/* styles.css */
+*{
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    background-color: #04172a;
+}
+#sidebar .title h1{
+    color: black;
+    font-size: 23px;
+    text-align: center;
+    margin: 20px 20px 20px;
+    padding-bottom: 10px;
+}
+.sidebar-list ul {
+    padding: 40px 0 0;
+}
+
+.sidebar-list ul li {
+    list-style-type: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+    margin: 0 auto 20px auto;
+    
+}
+
+.sidebar-list ul li:last-child {
+    border: none;
+}
+
+.sidebar-list ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sidebar-list ul li a:hover {
+    color: #b36b00; /* Change text color back to white */
+    font-weight: 700;
+    border-left: 5px solid #ff6600; /* Add a border left on hover */
+}
+
+.sidebar-list ul li .logout{
+    font-weight: 500;
+    color: rgb(149, 99, 6);
+}
+.sidebar-list ul li .logout:hover {
+    color: rgb(149, 99, 6);
+    font-weight: 700;
+    border-left: 5px solid #ff6600; /* Add a border left on hover */
+}
+
+
+.sidebar-list ul li .cat{
+    color: #b36b00; /* Change text color back to white */
+    font-weight: 700;
+    border-left: 5px solid #ff6600; /* Add a border left on hover */
+}
+.icon-field {
+    margin: 20px auto;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+
+
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ff7b00;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.btn:hover {
+    background-color: #b36b00;
+    cursor: pointer;
+}
+
+
+
+.container {
+    padding: 50px;
+    padding-left: 300px;
+    background: #b36b00;
+    height: 100%;
+}
+h2 {
+
+    margin-bottom: 20px;
+}
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 3px solid #000;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 300px;
+    margin-top: 20px;
+}
+.bar {
+    width: 40px;
+    background-color: #007bff;
+    margin: 0 5px;
+    transition: height 0.3s ease;
+}
+
+
+
+
+
+
+
+
+/* ======================= Cards ====================== */
+.cardBox {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-right: 20px;
+  }
+  
+  .cardBox .card {
+    position: relative;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  }
+  
+  .cardBox .card .numbers {
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--blue);
+  }
+  
+  .cardBox .card .cardName {
+    color: var(--black2);
+    font-size: 1.1rem;
+    margin-top: 5px;
+  }
+  
+  .cardBox .card .iconBx {
+    font-size: 3.5rem;
+    color: var(--black2);
+  }
+  
+  .cardBox .card:hover {
+    background: var(--blue);
+  }
+  .cardBox .card:hover .numbers,
+  .cardBox .card:hover .cardName,
+  .cardBox .card:hover .iconBx {
+    color: var(--white);
+  }
+
+
+
+
+
+
+
+
+
+
+  /* Dashboard.css */
+.chartsBx {
+    display: grid;
+    grid-gap: 30px;
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: 50px;
+    
+}
+
+.chart {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    border: 1px solid var(--blue);
+    height: 550px; 
+}

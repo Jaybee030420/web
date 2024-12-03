@@ -1,0 +1,15 @@
+/* style.css */
+
+.card.login-card {
+  border-radius: 25px; /* Adjust border radius as needed */
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for floating effect */
+  padding: 2rem; /* Padding inside the card */
+}
+
+.card.login-card .card-body {
+  padding: 2rem; /* Adjust padding inside the card body */
+}
+
+.card.login-card .btn {
+  border-radius: 30px; /* Adjust button border radius */
+}

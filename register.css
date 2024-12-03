@@ -1,0 +1,73 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #e5e5e5; /* Light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+.container {
+    background-color: #fff; /* Light bond paper color */
+    padding: 50px;
+    border-radius: 5px;
+    margin-top: 230px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 1000px; /* Fixed width for bond paper size */
+    border: 1px solid #000; /* Subtle border */
+    font-size: 16px; /* Slightly larger font size */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5a3921; /* Darker text color */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #4a3e36; /* Soft color for labels */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    width: 35%;
+    padding: 15px;
+    margin-top: 40px;
+    margin-left: 310px;
+    background-color: goldenrod; /* Soft gray button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold; /* Bold text for buttons */
+}
+
+button:hover {
+    background-color: #5a6268; /* Darker on hover */
+}
+
+
+#password-message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#password-message.match {
+    color: green;
+}
+
+#password-message.no-match {
+    color: red;
+}

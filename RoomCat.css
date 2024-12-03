@@ -1,0 +1,318 @@
+*{
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 10px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    background: url('./assets/images/carousel/4.png');
+}
+#sidebar .title h1{
+    color: black;
+    font-size: 28px;
+    text-align: center;
+    margin: 20px 20px 20px;
+
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000000;
+}
+.sidebar-list ul {
+    padding: 40px 0 0;
+}
+
+.sidebar-list ul li {
+    list-style-type: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+    margin: 0 auto 20px auto;
+    
+}
+
+.sidebar-list ul li:last-child {
+    border: none;
+}
+
+.sidebar-list ul li a {
+    color: #111;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sidebar-list ul li a:hover {
+    color: #000; /* Change text color back to white */
+    font-weight: 700;
+    border-left: 5px solid #ff6600; /* Add a border left on hover */
+}
+
+.sidebar-list ul li .logout{
+    font-weight: 500;
+    color: rgb(149, 99, 6);
+}
+.sidebar-list ul li .logout:hover {
+    color: rgb(149, 99, 6);
+    font-weight: 700;
+    border-left: 5px solid #ff6600; /* Add a border left on hover */
+}
+
+
+.sidebar-list ul li .cat{
+    color: #000; /* Change text color back to white */
+    font-weight: 700;
+    border-left: 5px solid #ff6600; /* Add a border left on hover */
+}
+.icon-field {
+    margin: 20px auto;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+
+
+
+.container-fluid {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/images/carousel/4.png') center/cover;
+    width: 100%;
+    height: 150vh;
+    padding-top: 8px;
+}
+
+.container-fluid .row1{
+    width: 145vh;
+    margin-left: 5vh;
+}
+.container-fluid .row{
+    width: 40vh;
+    margin-left: 5vh;
+    display: flex;
+    
+}
+.container-fluid .row3{
+    width: 35vh;
+    margin-bottom: 10px;
+    
+}
+.card {
+    margin-left: 300px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    background-color: rgba(210, 137, 2, 0.812);
+    color: black;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card-footer {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* Adjustments for image size */
+#cimg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adjust button colors, size, and remove default lines */
+.btn-primary,
+.btn-default {
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px; /* Adjust button padding */
+    font-size: 14px; /* Adjust button font size */
+}
+
+.btn-primary:hover,
+.btn-default:hover {
+    background-color: #0056b3;
+}
+
+.form-group {
+    padding: 10px; /* Adjust the padding size as needed */
+
+}
+.form-group label{
+    font-weight: 600;
+    margin-left: 2px;
+
+}
+
+.card {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+}
+
+.card th,
+.card td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.card th {
+    background-color: rgba(210, 137, 2, 0.812);
+}
+
+.card img {
+    max-width: 100px;
+    height: auto;
+}
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ff7b00;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.btn:hover {
+    background-color: #b36b00;
+    cursor: pointer;
+}
+
+
+
+
+/* Style for the input type number */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.btn-red {
+    background-color: red;
+    color: white;
+}
+
+.btn-green {
+    background-color: green;
+    color: white;
+}
+
+.btn-red:hover, .btn-green:hover {
+    cursor: pointer;
+}
+
+
+.container1 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/images/carousel/4.png') center/cover;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0;
+}
+
+.card {
+    width: 78%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    margin-left: 300px;
+    padding: 20px;
+
+}
+
+
+.table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px;
+}
+
+/* Table Header Styles */
+.table th {
+    background-color: #d67a01;
+    color: white; 
+    padding: 10px; 
+    text-align: center; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    border: 2px solid #d67a01; 
+}
+
+/* Table Data Cell Styles */
+.table td {
+    padding: 12px; /* Padding for data cells */
+    text-align: center; /* Center data text */
+    border-bottom: 1px solid #ddd; /* Bottom border for data cells */
+    color: #333; /* Data text color */
+    background-color: #fff; /* Default background color for data cells */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Alternate Row Background Color */
+.table tbody tr:nth-child(even) {
+    background-color: #f8f9fa; /* Light gray background for even rows */
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 30px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
