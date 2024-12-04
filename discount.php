@@ -53,6 +53,8 @@ if(isset($_POST['add'])){
 }
 
 
+
+@include 'config.php';
 if(isset($_POST['update'])){
     $name = $_POST['name'];
     $price = $_POST['price'];
@@ -69,10 +71,11 @@ if(isset($_POST['update'])){
 
 
 <?php
-$edit_user = null; 
 
 
 @include 'config.php';
+$edit_user = null; 
+
 if (isset($_POST['edit'])) {
     $id = $_POST['id'];
     $edit_query = "SELECT * FROM discount WHERE ID = '$id'";
@@ -84,6 +87,8 @@ if (isset($_POST['edit'])) {
 }
 
 
+
+@include 'config.php';
 if (isset($_POST['activate'])) {
     $id = $_POST['id'];
     $update_bit = "UPDATE discount SET bit = 1 WHERE ID = '$id'";
@@ -91,6 +96,8 @@ if (isset($_POST['activate'])) {
     echo "<script>window.location.href = 'discount.php'; alert('Discount successfully activated!'); </script>";
 }
 
+
+@include 'config.php';
 // Handle deactivation
 if (isset($_POST['deactivate'])) {
     $id = $_POST['id'];

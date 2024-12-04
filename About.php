@@ -28,6 +28,7 @@ if (isset($_SESSION['username']) && isset($_SESSION['position'])) {
 }
 
 
+@include 'config.php';
 $edit_user = null; 
 
 
@@ -96,6 +97,9 @@ if (isset($_POST['add'])) {
     }
 }
 
+
+
+@include 'config.php';
 if (isset($_POST['update'])) {
     $id = $_POST['id']; 
     $name = $_POST['name'];
@@ -148,6 +152,7 @@ if (isset($_POST['update'])) {
 
 
 
+@include 'config.php';
  if (isset($_POST['activate'])) {
     $room_id = $_POST['id'];
     // Update bit to 1 (activated)
@@ -156,6 +161,7 @@ if (isset($_POST['update'])) {
     echo "<script>window.location.href = 'About.php'; alert('Promo successfully activated!'); </script>";
 }
 
+@include 'config.php';
 // Handle deactivation
 if (isset($_POST['deactivate'])) {
     $room_id = $_POST['id'];
@@ -167,6 +173,9 @@ if (isset($_POST['deactivate'])) {
 
 ?>
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -177,7 +186,7 @@ if (isset($_POST['deactivate'])) {
     <title>GoldenGrainHotel</title>
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/1.png" type="image/x-icon">
-    <link rel="stylesheet" href="roomCat.css">
+    <link rel="stylesheet" href="RoomCat.css">
     <style>
 
 

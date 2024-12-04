@@ -29,9 +29,8 @@ if (isset($_SESSION['username']) && isset($_SESSION['position'])) {
 }
 
 
+@include 'config.php';
 $edit_user = null; 
-
-
 if (isset($_POST['add_room'])) {
     $name = $_POST['name'];
     $roomNum = $_POST['roomNum'];
@@ -85,6 +84,7 @@ if (isset($_POST['add_room'])) {
 
 
 
+@include 'config.php';
 if (isset($_POST['update_room'])) {
     $name = $_POST['name'];
     $roomNum = $_POST['roomNum'];
@@ -130,6 +130,7 @@ if (isset($_POST['update_room'])) {
 }
 
 
+@include 'config.php';
 if (isset($_POST['activate'])) {
     $room_id = $_POST['id'];
     
@@ -139,6 +140,7 @@ if (isset($_POST['activate'])) {
 }
 
 
+@include 'config.php';
 if (isset($_POST['deactivate'])) {
     $room_id = $_POST['id'];
     
@@ -147,6 +149,7 @@ if (isset($_POST['deactivate'])) {
     echo "<script>window.location.href = 'RoomCat.php'; alert('Room successfully deactivated!'); </script>";
 }
 
+@include 'config.php';
 if (isset($_POST['edit'])) {
    
     $id = $_POST['id'];

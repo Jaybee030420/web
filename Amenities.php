@@ -26,7 +26,8 @@ if (isset($_SESSION['username']) && isset($_SESSION['position'])) {
     exit();
 }
 
-// Add new amenities
+
+@include 'config.php';
 if (isset($_POST['add'])) {
     $name = $_POST['name'];
     $price = $_POST['price'];
@@ -73,6 +74,9 @@ if (isset($_POST['add'])) {
     }
 }
 
+
+
+@include 'config.php';
 if (isset($_POST['update'])) {
     $id = $_POST['id']; 
     $name = $_POST['name'];
@@ -125,6 +129,7 @@ if (isset($_POST['update'])) {
 
 
 
+@include 'config.php';
 // Activate/Deactivate amenities
 if (isset($_POST['activate']) || isset($_POST['deactivate'])) {
     $id = $_POST['id'];
@@ -135,6 +140,9 @@ if (isset($_POST['activate']) || isset($_POST['deactivate'])) {
     echo "<script>alert('Amenities successfully " . ($isActive ? 'activated' : 'deactivated') . "!'); window.location.href = 'Amenities.php';</script>";
 }
 
+
+
+@include 'config.php';
 // Fetch and edit an amenity (for modal)
 if (isset($_POST['edit'])) {
     $id = $_POST['id'];
@@ -148,6 +156,7 @@ if (isset($_POST['edit'])) {
 
 
 
+@include 'config.php';
 // Activate amenities
 if (isset($_POST['activate'])) {
     $id = $_POST['id'];
@@ -156,6 +165,9 @@ if (isset($_POST['activate'])) {
     echo "<script>window.location.href = 'Amenities.php'; alert('Amenities successfully activated!');</script>";
 }
 
+
+
+@include 'config.php';
 // Deactivate amenities
 if (isset($_POST['deactivate'])) {
     $id = $_POST['id'];
@@ -211,7 +223,7 @@ if (isset($_POST['deactivate'])) {
             <tbody>
             <?php
             @include 'config.php';
-            $sql = "SELECT * FROM Amenities order by amenitiesID desc";
+            $sql = "SELECT * FROM amenities order by amenitiesID desc";
 
             $result = $conn->query($sql);
 

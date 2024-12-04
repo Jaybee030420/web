@@ -71,7 +71,8 @@ if (isset($_POST['add'])) {
     }
 }
 
-// Updating existing mode of payment
+
+@include 'config.php';
 if (isset($_POST['update'])) {
     $id = $_POST['id'];
     $name = mysqli_real_escape_string($conn, $_POST['name']);
@@ -132,9 +133,6 @@ $edit_user = null;
 
 
 @include 'config.php';
-
-
-
 if (isset($_POST['edit'])) {
     // Fetch the user to be edited
     $id = $_POST['id'];
@@ -147,6 +145,7 @@ if (isset($_POST['edit'])) {
 }
 
 
+@include 'config.php';
 if (isset($_POST['activate'])) {
 
     $id = $_POST['id'];
@@ -156,6 +155,8 @@ if (isset($_POST['activate'])) {
     echo "<script>window.location.href = 'mop.php'; alert('Mode of payment successfully activated!'); </script>";
 }
 
+
+@include 'config.php';
 // Handle deactivation
 if (isset($_POST['deactivate'])) {
 
@@ -215,7 +216,7 @@ if (isset($_POST['deactivate'])) {
             <tbody>
             <?php
             @include 'config.php';
-            $sql = "SELECT * FROM MOP order by ID desc" ;
+            $sql = "SELECT * FROM mop order by ID desc" ;
 
            
             $result = $conn->query($sql);
